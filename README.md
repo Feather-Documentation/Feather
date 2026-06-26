@@ -2,11 +2,11 @@
 
 Open-source, free, and easy-to-use documentation builder with hundreds of customizable themes and a strict no-logs policy.
 
-Feather is an **open-source, secure, fully customizable documentation generator** designed for developers, corporations, or everyday people to create personalized websites for their businesses and more.
+Feather is an **open-source, secure, fully customizable documentation generator** designed for developers, corporations, or everyday people to create personalized documentation sections for their businesses and more.
 
 ## Included with Feather
 
-### Online Website Editing
+### Online Documentation Editing
 
 A user-friendly and comprehensive interface with many features, such as file uploads. It solely uses *localhost* for your editing needs, so your final site won't be editable by others. *(You can still make changes by pushing a new JSON file, of course!)*
 
