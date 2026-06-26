@@ -30,7 +30,7 @@ Follow these quick steps to set up your site and customize Feather to your needs
 
 1. **Fork the GitHub repository**
 
-   Clone the repository to your own GitHub account. The repository can be found on my profile: https://github.com/notrodeveloper
+   Clone the repository to your own GitHub account.
 
 2. **Run locally**
 
