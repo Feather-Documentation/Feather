@@ -7,8 +7,37 @@ export interface ThemeConfig {
   borderColor: string;
   borderWidth: string;
   borderRadius: string;
-  fontFamily: 'vt323' | 'inter' | 'courier';
+  fontFamily: string;
   iconStyle: 'pixel' | 'solid' | 'regular';
+  fontSize?: string;
+  contentWidth?: string;
+  lineHeight?: string;
+  shadowType?: 'none' | 'subtle' | 'medium' | 'heavy';
+  sidebarPosition?: 'left' | 'right';
+  sidebarWidth?: string;
+  secondaryAccentColor?: string;
+  successColor?: string;
+  warningColor?: string;
+  errorColor?: string;
+  codeBgColor?: string;
+  inlineCodeColor?: string;
+  linkColor?: string;
+  linkHoverColor?: string;
+  navbarColor?: string;
+  footerColor?: string;
+  searchBoxColor?: string;
+  quoteBlockColor?: string;
+  tableColor?: string;
+  buttonColor?: string;
+  scrollbarColor?: string;
+  selectionHighlightColor?: string;
+  fontWeight?: string;
+  letterSpacing?: string;
+  paragraphSpacing?: string;
+  headingSpacing?: string;
+  codeFontSize?: string;
+  headingScale?: string;
+  textAlignment?: string;
 }
 
 export interface DocSection {
@@ -16,6 +45,11 @@ export interface DocSection {
   title: string;
   icon: string;
   content: string;
+  subtitle?: string;
+  estimatedDifficulty?: 'easy' | 'medium' | 'hard';
+  tags?: string;
+  isDraft?: boolean;
+  isHidden?: boolean;
 }
 
 export interface ProjectConfig {
@@ -25,4 +59,37 @@ export interface ProjectConfig {
   favicon: string;
   theme: ThemeConfig;
   sections: DocSection[];
+  siteUrl?: string;
+  footerText?: string;
+  footerLinks?: string;
+  socialLinks?: string;
+  githubRepo?: string;
+  discordServer?: string;
+  companyLogo?: string;
+  mobileLogo?: string;
+  loadingLogo?: string;
+  appleTouchIcon?: string;
+  openGraphImage?: string;
+  browserColor?: string;
+  siteDescription?: string;
+  keywords?: string;
+  canonicalUrl?: string;
+  robotsTxt?: string;
+  sitemapXml?: string;
+  googleAnalyticsId?: string;
+  plausibleDomain?: string;
+  umamiScript?: string;
+  fullWidthMode?: boolean;
+  compactMode?: boolean;
+  sidebarDefaultCollapsed?: boolean;
+  stickySidebar?: boolean;
+  readingProgressBar?: boolean;
+  scrollToTop?: boolean;
+  customCss?: string;
+  customJs?: string;
+  customHeadHtml?: string;
+  enableMermaid?: boolean;
+  enableLatex?: boolean;
+  enableAdmonitions?: boolean;
+  enableFootnotes?: boolean;
 }

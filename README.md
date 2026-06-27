@@ -62,3 +62,6 @@ Feather comes pre-packaged with multiple themes for different industries or just
 # Supporting Feather
 
 If you'd like to support Feather, you may do so by visiting my GitHub Sponsors page. If you make a donation, thank you! And thank you to everyone for using my service.
+
+# Credits
+We use FontAwesome, a free website icon graphics library. You can find them at https://fontawesome.com/!
