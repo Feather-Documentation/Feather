@@ -60,10 +60,21 @@ export const DEFAULT_CONFIG: ProjectConfig = {
       content: "# Themes \n\nFeather comes pre-packaged with multiple themes, for different industries, or just general fun. There are different aesthetics available for corporations, developers and more!"
     },
     {
+    
       id: "support-me",
       title: "Supporting Feather",
       icon: "fa-solid fa-heart",
-      content: "# Supporting Feather \n\nIf you'd like to support Feather, you may do so by visiting my Github Sponsors page. If you make a donation, thank you! and thank you to everyone for using my service. "
+      content: `# Supporting Feather
+
+    If you'd like to support Feather, you may do so by visiting my GitHub Sponsors page. If you make a donation, thank you! And thank you to everyone for using Feather.
+
+    <iframe
+      src="https://github.com/sponsors/notrodeveloper/card"
+      title="Sponsor notrodeveloper"
+      height="225"
+      width="600"
+      style="border: 0;">
+    </iframe>`
     },
     {
       id: "credits",
