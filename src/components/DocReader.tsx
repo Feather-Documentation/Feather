@@ -485,7 +485,13 @@ export const DocReader: React.FC<DocReaderProps> = ({
     insertHTMLATCursor(tableHtml);
   };
 
-  const insertAlert = (types: 'info' | 'warning' | 'success' | 'danger') => {
+  const insertAlert = (type: string) => {
+    const allowedTypes = ['info', 'warning', 'success', 'danger'] as const;
+    if (!allowedTypes.includes(type as (typeof allowedTypes)[number])) {
+      return;
+    }
+    const safeType = type as (typeof allowedTypes)[number];
+
     const borderColors = {
       info: 'var(--primary-color)',
       warning: 'var(--warning-color)',
@@ -505,10 +511,10 @@ export const DocReader: React.FC<DocReaderProps> = ({
       danger: 'fa-solid fa-circle-xmark'
     };
     const html = `
-      <div class="admonition admonition-${types}" style="border-left: 12px solid ${borderColors[types]}; padding: 12px; margin: 16px 0; background-color: var(--sidebar-color); border-radius: var(--border-radius); display: flex; align-items: flex-start; gap: 10px;">
-        <i class="${icons[types]}" style="color: ${borderColors[types]}; font-size: 18px; margin-top: 2px; flex-shrink: 0;"></i>
+      <div class="admonition admonition-${safeType}" style="border-left: 12px solid ${borderColors[safeType]}; padding: 12px; margin: 16px 0; background-color: var(--sidebar-color); border-radius: var(--border-radius); display: flex; align-items: flex-start; gap: 10px;">
+        <i class="${icons[safeType]}" style="color: ${borderColors[safeType]}; font-size: 18px; margin-top: 2px; flex-shrink: 0;"></i>
         <div>
-          <strong>${labels[types]}:</strong> edit..
+          <strong>${labels[safeType]}:</strong> edit..
         </div>
       </div>
     `;
@@ -706,7 +712,7 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
 <select 
   onChange={(e) => {
     if (e.target.value) {
-      insertAlert(e.target.value as 'info' | 'warning' | 'success' | 'danger');
+      insertAlert(e.target.value);
       e.target.value = '';
     }
   }}
