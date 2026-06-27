@@ -1,6 +1,6 @@
 # Feather
 <p align="center">
-<img src="public/hero.png" alt="Logo" width="150" height="150">
+<img src="public/hero.png" alt="Logo" width="300" height="300">
 </p>
 
 Open-source, free, and easy-to-use documentation builder with hundreds of customizable themes and a strict no-logs policy.
