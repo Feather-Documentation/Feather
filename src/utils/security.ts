@@ -65,9 +65,10 @@ export function renderMarkdown(markdown: string): string {
     ALLOWED_TAGS: [
       'p', 'strong', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
       'ul', 'ol', 'li', 'a', 'code', 'pre', 'br', 'blockquote',
-      'img', 'span', 'div', 'hr', 'table', 'thead', 'tbody', 'tr', 'th', 'td'
+      'img', 'span', 'div', 'hr', 'table', 'thead', 'tbody', 'tr', 'th', 'td',
+      'iframe'
     ],
-    ALLOWED_ATTR: ['href', 'target', 'title', 'class', 'src', 'alt', 'id'],
+    ALLOWED_ATTR: ['href', 'target', 'title', 'class', 'src', 'alt', 'id', 'width', 'height', 'style'],
     SANITIZE_DOM: true,
     KEEP_CONTENT: false
   });
