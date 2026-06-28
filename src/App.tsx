@@ -875,7 +875,7 @@ function App() {
 
         {isLocalhost && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', borderTop: '2px solid var(--border-color)', paddingTop: '16px' }}>
-            <span style={{ fontSize: '12px', fontWeight: 'bold' }}>Local host machine controls:</span>
+            <span style={{ fontSize: '12px', fontWeight: 'bold' }}>Editing window..</span>
             <button 
               className="btn btn-primary" 
               onClick={() => setEditMode(!editMode)}
@@ -890,7 +890,7 @@ function App() {
                 onClick={handleResetDraft}
                 style={{ width: '100%' }}
               >
-                <i className="fa-solid fa-rotate-left"></i> Discard Local Draft
+                <i className="fa-solid fa-rotate-left"></i> Discard local wording..
               </button>
             )}
           </div>
@@ -1081,7 +1081,7 @@ function App() {
             />
           ) : (
             <div className="content-container">
-              <h2>Select a documentation page from the sidebar to begin.</h2>
+              <h2>Select a documentation page from the sidebar to begin..</h2>
             </div>
           )}
         </main>
